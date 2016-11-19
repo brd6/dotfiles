@@ -1,0 +1,45 @@
+(add-to-list 'load-path "~/.emacs.d/custom")
+
+;; Package manager
+(require 'package)
+(add-to-list 'package-archives
+	     '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/"))
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+    (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(package-initialize)
+
+(when (not package-archive-contents)
+      (package-refresh-contents))
+
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+
+(require 'use-package)
+(setq use-package-always-ensure t)
+
+;; default
+(require 'init-default)
+
+;; Skeleton
+(require 'init-skeleton)
+
+;; helm
+(require 'init-helm)
+
+;; helm-gtags
+(require 'init-helm-gtags)
+
+;; ggtags
+(require 'init-ggtags)
+
+;; cedet
+(require 'init-cedet)
+
+;; company-mode
+(require 'init-company-mode)
+
+;; yasnippet
+(require 'init-yasnippet)
