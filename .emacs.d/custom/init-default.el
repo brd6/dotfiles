@@ -89,8 +89,8 @@
 (savehist-mode 1)
 
 ; battery state
-(display-battery-mode)
-(setq display-time-next-load-average)
+;;(display-battery-mode)
+;;(setq display-time-next-load-average)
 
 ;; Linum-mode
 (global-set-key (kbd "<f6>") 'linum-mode)

@@ -49,7 +49,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(cp emacs)
+plugins=(cp emacs sublime)
 
 # User configuration
 
@@ -88,7 +88,6 @@ export HISTSIZE=1000
 export MAIL="/u/all/${USER}/mail/${USER}"
 export PAGER='more'
 export MANPAGER='most'
-#export PS1="(\u@\h \#)"
 #export SAVEHIST=1000
 #export WATCH='all'
 
@@ -118,8 +117,6 @@ alias du='du --human-readable'
 alias makere='make re'
 alias makeclean='make clean'
 
-#alias sublimetext='subl'
-#alias sublimetxt='sublimetext'
 alias vi='emacs'
 alias vim='emacs'
 
@@ -129,6 +126,7 @@ alias -s c=emacs
 unsetopt beep
 unsetopt hist_beep
 unsetopt list_beep
+xset b off
 
 # confirmation rm *
 unsetopt rm_star_silent
