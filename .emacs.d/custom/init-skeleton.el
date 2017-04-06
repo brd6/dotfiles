@@ -73,9 +73,9 @@
   ".PHONY: clean, re, all, fclean\n"
   )
 
-(add-to-list 'auto-mode-alist '("\\.h\\'" . load-fileH))
-(add-to-list 'auto-mode-alist '("\\.c\\'" . load-fileC))
-(add-to-list 'auto-mode-alist '("Makefile" . load-makefile))
+;;(add-to-list 'auto-mode-alist '("\\.h\\'" . load-fileH))
+;;(add-to-list 'auto-mode-alist '("\\.c\\'" . load-fileC))
+;;(add-to-list 'auto-mode-alist '("Makefile" . load-makefile))
 
 (defun load-fileH ()
   "Load Header and add a main squeleton model"

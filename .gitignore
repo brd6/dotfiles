@@ -1,0 +1,6 @@
+.emacs.d/*.dat
+.emacs.d/auto-save-list
+.emacs.d/history
+.emacs.d/recentf
+.emacs.d/semanticdb
+.emacs.d/ede-projects.el
